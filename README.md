@@ -35,6 +35,10 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ---
 
-Connecting with planetscale db: (windows powershell)
+Connecting with planetscale db: (powershell)
 pscale connect mood-fm dev --port 3309
+
 https://app.planetscale.com/dd-duszynski/mood-fm
+
+After any changes in prisma model:
+npx prisma db push
