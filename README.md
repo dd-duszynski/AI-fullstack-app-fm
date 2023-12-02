@@ -42,3 +42,7 @@ https://app.planetscale.com/dd-duszynski/mood-fm
 
 After any changes in prisma model:
 npx prisma db push
+
+Start:
+pscale connect mood-fm dev --port 3309 (powershell)
+npm run dev
