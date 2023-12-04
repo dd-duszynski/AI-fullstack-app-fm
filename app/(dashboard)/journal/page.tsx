@@ -11,15 +11,12 @@ const getEntries = async () => {
     where: { userId: user.id },
     orderBy: { createdAt: 'desc' },
   });
-  await analyze(
-    'Create me a long polling example in typescript class react component that wrapped the whole application.',
-  );
+
   return entries;
 };
 
 export default async function JournalPage() {
   const entries = await getEntries();
-  console.log('JournalPage entries: ', entries);
   return (
     <div className="p-10 bg-zinc-100/50 h-full">
       <h2 className="text-3xl mb-8">Journal</h2>
